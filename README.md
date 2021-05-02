@@ -6,6 +6,6 @@ Used technologies: Vanilla JS, Webpack, HTML, CSS
 
 # DEMO
 
-https://anton-vasylchenko.github.io/maze-game/dist/
+https://anton-vasylchenko.github.io/js-maze-game/dist/index.html
 
 Enjoy! :)
