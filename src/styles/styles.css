@@ -1,0 +1,112 @@
+@import '~normalize.css';
+@import 'fonts.css';
+
+* {
+  margin: 0;
+  padding: 0;
+}
+
+html,
+body {
+  background: url(../img/main-bg.png);
+  height: 100%;
+}
+
+.wrapper {
+  display: flex;
+  flex-direction: column;
+  height: 100%;
+}
+
+.maze {
+  margin-top: 60px;
+  flex: 1 0 auto;
+}
+footer {
+  margin-top: 20px;
+  padding-top: 10px;
+  flex: 0 1 auto;
+  height: 120px;
+  text-align: center;
+  color: white;
+  background: rgb(36, 36, 36);
+}
+
+table {
+  margin: auto;
+  padding: 0;
+  position: relative;
+  border: 5px solid rgb(107, 107, 107);
+  box-sizing: content-box;
+  border-spacing: 0 0;
+  background: url(../img/maze-bg.png);
+  box-shadow: 0px 0px 15px rgba(0, 0, 0, 0.8);
+}
+
+tr {
+  margin: 0;
+  padding: 0;
+  border-spacing: 0 0;
+}
+
+td {
+  width: 35px;
+  height: 35px;
+  padding: 0;
+  border: 5px solid rgb(107, 107, 107);
+  background-position: center;
+  background-size: cover;
+}
+
+.finish-icon {
+  position: absolute;
+  width: 60px;
+  height: 60px;
+  background: url(../img/exit-icon.png);
+  background-position: center;
+  background-size: contain;
+  z-index: 5;
+  top: -50px;
+  left: -15px;
+}
+
+.footer-img {
+  height: 50px;
+  width: 70px;
+  background: url('../img/controls.png');
+  background-position: center;
+  background-size: contain;
+  background-repeat: no-repeat;
+  display: inline-block;
+}
+
+.bg-popup {
+  width: 100%;
+  height: 100%;
+  background: black;
+  opacity: 0.7;
+  position: absolute;
+  z-index: 6;
+  top: 0;
+  display: none;
+}
+
+.msg-block {
+  background: rgb(192, 162, 162);
+  width: 400px;
+  height: 230px;
+  position: absolute;
+  top: 35%;
+  z-index: 7;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  padding-top: 20px;
+  display: none;
+}
+
+.msg-block button {
+  margin-top: 10px;
+  padding: 10px;
+  cursor: pointer;
+}
